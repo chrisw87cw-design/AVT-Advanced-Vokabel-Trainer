@@ -63,7 +63,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             padding: const EdgeInsets.only(right: 12.0),
             child: Row(
               children: [
-                const Icon(Icons.local_fire_bar, color: Colors.deepOrange),
+                const Icon(Icons.local_fire_department, color: Colors.deepOrange),
                 Text(' $_streak', style: const TextStyle(fontWeight: FontWeight.bold)),
                 const SizedBox(width: 12),
                 const Icon(Icons.stars, color: Colors.amber),
@@ -101,24 +101,16 @@ class _TrainerTabState extends State<TrainerTab> with SingleTickerProviderStateM
   bool _isFront = true;
   int _currentIndex = 0;
 
-  // Erweitertes Basiswissen: Latein, Englisch, Französisch und Anspruchsvolles Deutsch (Synonyme/Gegenteile)
   final List> _vocabs = [
-    // Latein
     {'foreign': 'rex, regis m.', 'grammar': '3. Deklination', 'translation': 'der König', 'lang': 'Latein (Basis)'},
     {'foreign': 'tempus, temporis n.', 'grammar': '3. Deklination (Neutrum)', 'translation': 'die Zeit, das Wetter', 'lang': 'Latein (Basis)'},
     {'foreign': 'etiam', 'grammar': 'Adverb', 'translation': 'auch, sogar', 'lang': 'Latein (Basis)'},
-    
-    // Englisch
     {'foreign': 'ubiquitous', 'grammar': 'Adjective (Advanced)', 'translation': 'allgegenwärtig, omnipräsent', 'lang': 'Englisch (Pro)'},
     {'foreign': 'resilient', 'grammar': 'Adjective', 'translation': 'widerstandsfähig, belastbar', 'lang': 'Englisch (Pro)'},
     {'foreign': 'ambition', 'grammar': 'Noun [C/U]', 'translation': 'Ehrgeiz, strebsames Ziel', 'lang': 'Englisch (Basis)'},
-
-    // Französisch
     {'foreign': 'étoile (f.)', 'grammar': 'Nom féminin', 'translation': 'der Stern', 'lang': 'Französisch (Basis)'},
     {'foreign': 'pourtant', 'grammar': 'Adverbe de concession', 'translation': 'dennoch, trotzdem', 'lang': 'Französisch (Pro)'},
     {'foreign': 'disparaître', 'grammar': 'Verbe du 3e groupe', 'translation': 'verschwinden, untergehen', 'lang': 'Französisch (Pro)'},
-
-    // Deutsch (Kniffliges Synonym- & Sprach-Quiz)
     {'foreign': 'Ephemer', 'grammar': 'Deutsches Fremdwort / Adjektiv', 'translation': 'flüchtig, nur von sehr kurzer Dauer', 'lang': 'Deutsch (Knifflig)'},
     {'foreign': 'Konträr (Gegenteil?)', 'grammar': 'Antonym-Training', 'translation': 'gleichartig, konform, übereinstimmend', 'lang': 'Deutsch (Knifflig)'},
     {'foreign': 'Subversiv', 'grammar': 'Deutsches Fremdwort / Adjektiv', 'translation': 'umstürmerisch, die bestehende Ordnung untergrabend', 'lang': 'Deutsch (Knifflig)'},
@@ -303,7 +295,7 @@ class StatsTab extends StatelessWidget {
         ),
         Card(
           child: ListTile(
-            leading: const Icon(Icons.local_fire_bar, size: 40, color: Colors.deepOrange),
+            leading: const Icon(Icons.local_fire_department, size: 40, color: Colors.deepOrange),
             title: Text('$streak Tage Lernserie'),
             subtitle: const Text('Streak-Freeze aktiv – Perfekt gesichert!'),
           ),
