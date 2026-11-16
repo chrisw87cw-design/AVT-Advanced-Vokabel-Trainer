@@ -101,7 +101,8 @@ class _TrainerTabState extends State<TrainerTab> with SingleTickerProviderStateM
   bool _isFront = true;
   int _currentIndex = 0;
 
-  final List> _vocabs = [
+  // Ohne spitze Klammern – absolut sicher vor Browser-Parsing-Fehlern!
+  final _vocabs = [
     {'foreign': 'rex, regis m.', 'grammar': '3. Deklination', 'translation': 'der König', 'lang': 'Latein (Basis)'},
     {'foreign': 'tempus, temporis n.', 'grammar': '3. Deklination (Neutrum)', 'translation': 'die Zeit, das Wetter', 'lang': 'Latein (Basis)'},
     {'foreign': 'etiam', 'grammar': 'Adverb', 'translation': 'auch, sogar', 'lang': 'Latein (Basis)'},
